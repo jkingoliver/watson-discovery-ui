@@ -1,0 +1,50 @@
+{
+    "appIconURL": "blueprint/appicon.svg",
+    "description": "This is a Watson Discovery UI Starterkit",
+    "name": "Watson Discovery UI",
+    "previewURLs": [],
+    "tags": [
+        "watson"
+    ],
+    "type": "WEB",
+    "generators": {
+        "node": [
+            "generator-ibm-core-node-express",
+            "generator-web",
+            "generator-ibm-service-enablement",
+            "generator-ibm-cloud-enablement",
+            "generator-readme",
+            "generator-git-starterkit-credentials-builder"
+        ]
+    },
+    "generatorOptions": {
+        "generator-ibm-core-node-express": {},
+        "generator-ibm-service-enablement": {},
+        "generator-ibm-cloud-enablement": {
+            "options": {
+                "port": "3000"
+              }
+        },
+        "generator-web": {
+            "scope": "@arf",
+            "options": {
+                "framework": "None"
+            }
+        },
+        "generator-readme": {
+            "scope": "@arf",
+            "options": {
+              "appType": "WEB",
+              "framework": "None"
+            }
+          },
+        "generator-github-starterkit-credentials-builder": {
+            "scope": "@arf"
+        }
+    },
+    "thumbnailURL": "blueprint/thumbnail.svg",
+    "requiredCapabilities": ["discovery"],
+    "requiredCapabilitiesURLs": {},
+    "servicePlans": {},
+    "email": "cloud@us.ibm.com"
+}
