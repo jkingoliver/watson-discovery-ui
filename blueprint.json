@@ -1,50 +1,84 @@
 {
-    "appIconURL": "blueprint/appicon.svg",
-    "description": "This is a Watson Discovery UI Starterkit",
-    "name": "Watson Discovery UI",
-    "previewURLs": [],
-    "tags": [
-        "watson"
+  "name": "WatsonDiscoveryJO",
+  "description": "This is one amazing StarterKit",
+  "thumbnailURL": "blueprint/thumbnail.svg",
+  "appIconURL": "blueprint/appicon.svg",
+  "previewURLs": [],
+  "type": "WEB",
+  "tags": [
+    "node",
+    "watson",
+    "appservice"
+  ],
+  "checklist": [
+    {
+      "label": "Do this",
+      "link": "https://ibm.com"
+    },
+    {
+      "label": "Do that",
+      "link": "https://ibm.com"
+    }
+  ],
+  "generators": {
+    "node": [
+      "generator-ibm-core-node-express",
+      "generator-ibm-cloud-enablement",
+      "generator-ibm-service-enablement",
+      "generator-ibm-usecase-enablement"
     ],
-    "type": "WEB",
-    "generators": {
-        "node": [
-            "generator-ibm-core-node-express",
-            "generator-web",
-            "generator-ibm-service-enablement",
-            "generator-ibm-cloud-enablement",
-            "generator-readme",
-            "generator-git-starterkit-credentials-builder"
-        ]
+    "python": [
+      "generator-core-python-flask",
+      "generator-ibm-cloud-enablement",
+      "generator-ibm-service-enablement",
+      "generator-ibm-usecase-enablement"
+    ],
+    "java": [
+      "generator-ibm-java"
+    ],
+    "spring": [
+      "generator-ibm-java"
+    ],
+    "swift": [
+      "generator-swiftserver"
+    ]
+  },
+  "generatorOptions": {
+    "generator-ibm-core-node-express": {
+      "version": "latest"
     },
-    "generatorOptions": {
-        "generator-ibm-core-node-express": {},
-        "generator-ibm-service-enablement": {},
-        "generator-ibm-cloud-enablement": {
-            "options": {
-                "port": "3000"
-              }
-        },
-        "generator-web": {
-            "scope": "@arf",
-            "options": {
-                "framework": "None"
-            }
-        },
-        "generator-readme": {
-            "scope": "@arf",
-            "options": {
-              "appType": "WEB",
-              "framework": "None"
-            }
-          },
-        "generator-github-starterkit-credentials-builder": {
-            "scope": "@arf"
+    "generator-core-python-flask": {
+      "scope": "@arf"
+    },
+    "generator-ibm-service-enablement": {},
+    "generator-ibm-cloud-enablement": {},
+    "generator-ibm-usecase-enablement": {},
+    "generator-ibm-java": {
+      "options": {
+        "headless": "true",
+        "buildType": "maven"
+      },
+      "java": {
+        "options": {
+          "createType": "skit/liberty"
         }
+      },
+      "spring": {
+        "options": {
+          "createType": "skit/spring"
+        }
+      }
     },
-    "thumbnailURL": "blueprint/thumbnail.svg",
-    "requiredCapabilities": ["discovery"],
-    "requiredCapabilitiesURLs": {},
-    "servicePlans": {},
-    "email": "cloud@us.ibm.com"
+    "generator-swiftserver": {}
+  },
+  "requiredCapabilities": [
+    "discovery"
+  ],
+  "requiredCapabilitiesURLs": {
+    "discovery": "https://console.bluemix.net/catalog/services/discovery"
+  },
+  "servicePlans": {
+    "discovery": "lite"
+  },
+  "email": "cloud@us.ibm.com"
 }

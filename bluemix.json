@@ -1,0 +1,35 @@
+{
+  "name": "AcmeProject",
+  "backendPlatform": "NODE",
+  "sdks": [
+    {
+      "name": "PetStore",
+      "spec": "http://petstore.swagger.io/v2/swagger.json"
+    }
+  ],
+  "server": {
+    "diskQuota": "manifest-disk-quota",
+    "domain": "manifest-domain",
+    "env": {},
+    "host": "manifest-host",
+    "instances": 3,
+    "memory": "manifest-memory",
+    "name": "manifest-name",
+    "organization": "manifest-org",
+    "services": [
+      "my-service1-instance",
+      "my-service2-instance"
+    ],
+    "space": "manifest-space"
+  },
+  "discovery": {
+    "url": "https://gateway.watsonplatform.net/discovery/api",
+    "username": "discovery-username",
+    "password": "discovery-password",
+    "serviceInfo": {
+      "label": "discovery-label",
+      "name": "discovery-name",
+      "plan": "discovery-plan"
+    }
+  }
+}
