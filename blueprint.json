@@ -1,0 +1,47 @@
+{
+  "name": "watson-discover-ui",
+  "description": "Develop a fully featured web app built on the Watson Discovery Service",
+  "thumbnailURL": "blueprint/thumbnail.svg",
+  "appIconURL": "blueprint/appicon.svg",
+  "previewURLs": [],
+  "type": "WEB",
+  "tags": [
+    "node",
+    "watson",
+    "appservice"
+  ],
+  "generators": {
+    "node": [
+      "generator-starterkit-content-downloader",
+      "generator-ibm-cloud-enablement",
+	  "generator-github-starterkit-credentials-builder",
+	  "generator-ibm-service-enablement"
+    ]
+  },
+  "generatorOptions": {
+    "generator-starterkit-content-downloader": {
+      "scope": "@arf",
+	  "version": "0.x.x"
+    },
+    "generator-ibm-cloud-enablement": {
+		"version": "0.8.x"
+	},
+	"generator-github-starterkit-credentials-builder": {
+		"scope": "@arf",
+		"version": "0.x.x"
+	},
+	"generator-ibm-service-enablement": {
+		"version": "0.6.4"
+	}
+  },
+  "requiredCapabilities": [
+    "discovery"
+  ],
+  "requiredCapabilitiesURLs": {
+    "discovery": "https://console.bluemix.net/catalog/services/discovery"
+  },
+  "servicePlans": {
+    "discovery": "lite"
+  },
+  "email": "cloud@us.ibm.com"
+}
