@@ -15,7 +15,7 @@
     "node": [
       "generator-starterkit-content-downloader",
       "generator-ibm-cloud-enablement",
-	  "generator-github-starterkit-credentials-builder",
+	  "generator-git-starterkit-credentials-builder",
 	  "generator-ibm-service-enablement"
     ]
   },
@@ -27,7 +27,7 @@
     "generator-ibm-cloud-enablement": {
 		"version": "0.8.x"
 	},
-	"generator-github-starterkit-credentials-builder": {
+	"generator-git-starterkit-credentials-builder": {
 		"scope": "@arf",
 		"version": "0.x.x"
 	},
